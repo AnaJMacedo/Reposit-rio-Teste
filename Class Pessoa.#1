@@ -1,0 +1,57 @@
+class Pessoa:
+    def __init__(self,nome,idade,comendo=False, falando=False, dormir=False):
+       self.nome = nome
+       self.idade = idade
+       self.comendo = comendo
+       self.falando = falando
+       self.dormindo = dormir
+
+    def falar (self):
+        print(f'este aqui é o {self.nome} e estou falando')
+
+    def andar (self):
+        print(f'apesar de terem se passado X anos, eu eu ja ter {self.idade} ainda estou andando')
+    
+    def comer (self,alimento):
+        print(f'aqui é o(a) {self.nome} e hoje, dia XX de XXXXX de XXXX, estou comendo, meu favorito : {alimento}')
+        self.comendo=True
+
+    def dormir (self):
+        print('fui zzzzzz')
+#DEF SẪO FUNÇÕES DENTRO DE UMA CLASSE (CLASS)#
+
+
+#$ /bin/python3 "/home/ana/Documentos/PROFESSOR ROBERSON - CURSO TECNICO/pessoa.py"
+#$ python3
+#Python 3.8.10 (default, Jun 22 2022, 20:18:18) 
+#[GCC 9.4.0] on linux
+#Type "help", "copyright", "credits" or "license" for more information.
+#>>> from pessoa import Pessoa
+#>>> 
+#>>> aluno=Pessoa('Kaique',34)
+#>>> 
+#>>> aluno.nome
+#'Kaique'
+#>>> 
+#>>> aluno.idade
+#34
+#>>> aluno.comendo('sanuiche')
+#Traceback (most recent call last):
+#File "<stdin>", line 1, in <module>
+#TypeError: 'bool' object is not callable
+#>>> aluno.comendo('abacate')
+#Traceback (most recent call last):
+#File "<stdin>", line 1, in <module>
+#TypeError: 'bool' object is not callable
+#>>> aluno.comer
+#<bound method Pessoa.comer of <pessoa.Pessoa object at 0x7f5a505945b0>>
+#>>> aluno.comer('cuzcuz')
+#aqui é o(a) Kaique e hoje, dia XX de XXXXX de XXXX, estou comendo, meu favorito : cuzcuz
+#>>> 
+#>>> aluno.andar('12')
+#Traceback (most recent call last):
+#File "<stdin>", line 1, in <module>
+#TypeError: andar() takes 1 positional argument but 2 were given
+#>>> 
+#>>> 
+#>>> 
