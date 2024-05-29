@@ -1,0 +1,21 @@
+class Pessoa:
+    def __init__(self,nome,idade,comendo=False, falando=False, dormir=False):
+       self.nome = nome
+       self.idade = idade
+       self.comendo = comendo
+       self.falando = falando
+       self.dormindo = dormir
+
+    def falar (self):
+        print(f'este aqui é o {self.nome} e estou falando')
+
+    def andar (self):
+        print(f'apesar de terem se passado X anos, eu eu ja ter {self.idade} ainda estou andando')
+    
+    def comer (self,alimento):
+        print(f'aqui é o {self.nome} e hoje, dia XX de XXXXX de XXXX, estou comendo, meu favorito :{alimento}')
+
+    def dormir (self):
+        print('fui zzzzzz')
+        
+#DEF SẪO FUNÇÕES DENTRO DE UMA CLASSE (CLASS)#
